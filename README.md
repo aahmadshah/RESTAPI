@@ -36,10 +36,3 @@ Here's what each function does:
    - If any field is missing, it returns a **400 error** (`Bad Request`).
    - Creates the user in the database and returns the newly created user's **ID**.
 
-### Issues in the Code:
-- The **GET route with ID** unnecessarily converts `req.params.id` to a number.
-- The **PATCH route** always sets `lastname` to `"Updated Name"` instead of using request data.
-- The **DELETE route** does not delete a user; it updates their `lastname` instead.
-- The **response messages** in some functions (`PATCH`, `DELETE`) are unclear.
-
-Would you like me to fix these issues for you? 🚀
